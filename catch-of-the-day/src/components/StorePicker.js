@@ -2,9 +2,17 @@ import React from 'react';
 import { getFunName } from '../helpers';
 
 class StorePicker extends React.Component {
+  goToStore(event) {
+    // This stops the form from submitting
+    event.preventDefault();
+    // Get text from input
+
+    // Route to store/inputValue
+  }
+
   render() {
     return (
-      <form className="store-selector">
+      <form className="store-selector" onSubmit={this.goToStore}>
         <h2>Please enter a store</h2>
         <input
           type="text"

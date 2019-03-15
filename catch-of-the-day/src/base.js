@@ -9,7 +9,7 @@ const firebaseApp = firebase.initializeApp({
 });
 
 // Create rebase binding
-const base = Rebase.createClass(firebaseApp.database);
+const base = Rebase.createClass(firebaseApp.database());
 
 // Named export
 export { firebaseApp };
